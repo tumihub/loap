@@ -1,0 +1,29 @@
+{
+  "name": "tumihub/loap",
+  "type": "library",
+  "description": "For quickly deploying SOAP services in Laravel and Lumen, with auto-discovery of WSDL definitions.",
+  "keywords": ["laravel", "lumen", "soap", "soap server", "soap api"],
+  "homepage": "https://www.tumi-soft.com",
+  "authors": [
+    {
+      "name": "Tumi Soft",
+      "email": "admin@tumi-soft.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "laminas/laminas-soap": "^2.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tumihub\\Loap\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Tumihub\\Loap\\LoapServiceProvider"
+      ]
+    }
+  }
+}
